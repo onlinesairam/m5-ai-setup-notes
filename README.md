@@ -22,10 +22,21 @@ a professional AI engineering workstation from scratch.
 ### Phase 2 — Developer Infrastructure 🔄
 - Git 2.53.0 (Homebrew) ✅
 - GitHub SSH + CLI authenticated ✅
-- Python (pyenv + Miniconda) ⬜
+- pyenv 2.6.23 — Python version manager ✅
+- Python 3.12.0 (primary) + 3.11.0 (secondary) ✅
+- conda 25.11.1 (Miniconda) ✅
+- uv 0.10.7 — fast package installer ✅
+- datascience environment — full ML stack ✅
+- MPS GPU: True — M5 GPU available for PyTorch ✅
 - Docker Desktop ⬜
 - Kubernetes (k3d) ⬜
 - Node.js (nvm) ⬜
+
+### Key fixes learned
+- pyenv + conda conflict → CONDA_PREFIX PATH fix
+- pyenv shim vs sys.executable distinction
+- Build dependencies (xz, readline) before pyenv install
+- PATH ordering — explicit beats implicit
 
 ### Phase 3 — AI Coding Tools ⬜
 ### Phase 4 — Local AI Stack ⬜
